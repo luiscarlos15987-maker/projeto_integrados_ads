@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAMC Avaliação do produto</title>
+<style>body{font:18px Arial;background:#f4f3ef;color:#17251e;margin:0}main{max-width:440px;margin:50px auto;background:white;padding:30px;border:1px solid #ccc;border-radius:12px}button,textarea{font:inherit}button{padding:14px;margin:4px;border:1px solid #385d45;background:white;border-radius:8px;cursor:pointer}button[aria-pressed=true]{background:#254d35;color:white}button:focus-visible,textarea:focus-visible{outline:3px solid #245db0;outline-offset:3px}textarea{display:block;box-sizing:border-box;width:100%;height:120px;margin:12px 0}#enviar,#abrir{background:#254d35;color:white}#enviar:disabled{background:#777;cursor:default}small{display:block;margin:16px 0;line-height:1.5}</style>
+<main><p>CAMC · Pedido demonstrativo 001</p><h1>Barra Mel e Chia</h1><p>Pedido entregue</p><button id="abrir">Avaliar produto</button>
+<section id="form" hidden><h2>Como foi sua experiência?</h2><div role="group" aria-label="Nota de 1 a 5">
+<button type="button" data-nota="1" aria-label="1 Ruim" aria-pressed="false">1</button>
+<button type="button" data-nota="2" aria-label="2 Regular" aria-pressed="false">2</button>
+<button type="button" data-nota="3" aria-label="3 Boa" aria-pressed="false">3</button>
+<button type="button" data-nota="4" aria-label="4 Muito boa" aria-pressed="false">4</button>
+<button type="button" data-nota="5" aria-label="5 Excelente" aria-pressed="false">5</button></div>
+<p id="selecionada" aria-live="polite">Selecione uma nota.</p><label for="comentario">Comentário opcional</label><textarea id="comentario" maxlength="500"></textarea><button id="enviar" disabled>Enviar avaliação</button></section>
+<p id="resultado" role="status"></p><small>Protótipo local: nenhum dado é enviado ou salvo. Registrar apenas a nota exige três cliques a partir desta tela. Digitar um comentário acrescenta interações.</small></main>
+<script>let nota=null;document.querySelector('#abrir').onclick=()=>{document.querySelector('#form').hidden=false;document.querySelector('#abrir').hidden=true;document.querySelector('[data-nota]').focus()};document.querySelectorAll('[data-nota]').forEach(b=>b.onclick=()=>{nota=Number(b.dataset.nota);document.querySelectorAll('[data-nota]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelector('#selecionada').textContent='Nota selecionada: '+nota;document.querySelector('#enviar').disabled=false});document.querySelector('#enviar').onclick=()=>{if(nota===null)return;document.querySelector('#resultado').textContent='Avaliação enviada nesta demonstração. Nota: '+nota;document.querySelector('#form').hidden=true};</script></html>
+
