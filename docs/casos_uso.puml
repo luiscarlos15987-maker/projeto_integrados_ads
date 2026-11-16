@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor "Secretária" as S
+actor "Médico" as M
+rectangle "Gestão de consultas Vida+" {
+ usecase "Cadastrar paciente" as C
+ usecase "Agendar consulta" as A
+ usecase "Confirmar consulta" as F
+ usecase "Cancelar consulta" as X
+ usecase "Verificar cadastro" as V
+ usecase "Gerar receita" as R
+ usecase "Imprimir receita" as I
+}
+S -- C
+S -- A
+S -- F
+S -- X
+M -- X
+M -- R
+A ..> V : <<include>>
+F ..> V : <<include>>
+R ..> I : <<include>>
+note bottom of V
+ Pré-condição para agendar ou confirmar:
+ paciente previamente cadastrado.
+end note
+@enduml
+
