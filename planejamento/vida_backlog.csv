@@ -1,0 +1,11 @@
+ID,Título,Lista,Sprint,Critério de aceite
+V01,Cadastrar pacientes,Backlog,1,Validar nome idade telefone
+V02,Listar pacientes,Backlog,1,Mostrar todos os cadastros
+V03,Calcular estatísticas,Backlog,1,Total média mais novos e mais velhos
+V04,Buscar por nome,Backlog,2,Busca parcial sem distinção de caixa
+V05,Validar menu,Backlog,2,Repetir até sair e tratar erro
+V06,Tabelas verdade,Backlog,3,16 linhas por modalidade
+V07,Fila FIFO,Backlog,3,Inserir três remover primeiro listar restantes
+V08,Casos de uso,Backlog,3,Atores relações e pré-condições corretos
+V09,Relatório final,Backlog,3,Incluir evidências reais e Modelo AVA
+
