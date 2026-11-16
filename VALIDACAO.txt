@@ -1,0 +1,17 @@
+Verificação executada em 16/11/2026
+test_cadastro_e_busca (test_vida.TestVida.test_cadastro_e_busca) ... ok
+test_estatistica_e_empates (test_vida.TestVida.test_estatistica_e_empates) ... ok
+test_invalidos_nao_alteram_lista (test_vida.TestVida.test_invalidos_nao_alteram_lista) ... ok
+test_nome_vazio (test_vida.TestVida.test_nome_vazio) ... ok
+test_vazio (test_vida.TestVida.test_vazio) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+
+MySQL: não executado.
+Trello: não criado.
+Word: estrutura gerada, sem renderização por ausência do LibreOffice.
+Wireframe: análise do fluxo; teste de navegador indisponível nesta sessão.
+
