@@ -1,0 +1,10 @@
+ID,Título,Lista,Prioridade,Critério de aceite
+CRM01,Cadastro de clientes,Backlog,Alta,Nome contato e prevenção de duplicidade
+CRM02,Histórico unificado,Backlog,Média,Tickets e pedidos em ordem cronológica
+CRM03,Tickets,Backlog,Alta,Protocolo canal categoria descrição responsável
+CRM04,Status,Backlog,Alta,Estados e histórico de transições
+CRM05,Pedidos e lotes,Backlog,Média,Associar reclamação ao lote e pedido
+CRM06,Avaliação,Backlog,Média,Nota 1 a 5 comentário opcional
+CRM07,Indicadores,Backlog,Baixa,Tempo resolução volume por canal média notas
+CRM08,Acesso e auditoria,Backlog,Alta,Bloquear acessos e registrar alterações
+
